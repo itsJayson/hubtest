@@ -260,7 +260,7 @@ h2 {
 }
 
 @media only screen and (min-width: 1441px) {
-  .carouselCont {
+  /* .carouselCont {
     height: auto;
     width: 65%;
     object-fit: cover;
@@ -290,7 +290,7 @@ h2 {
   body > header > div > form > input {
     height: 5rem;
     margin-top: 1.5rem;
-  }
+  } */
 }
 @media only screen and (max-width: 1080px) {
   .productsDisplayCont {
