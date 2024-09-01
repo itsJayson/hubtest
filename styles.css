@@ -258,39 +258,134 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (min-width: 2180px) {
+  .pcComponentsCategMain {
+    margin-top: 3vh;
+  }
 
+  .pcItem,
+  .pcItem img {
+    height: 10vh;
+    width: 10vw;
+    transition: height 0.3s ease;
+  }
+
+  .pcComponentsCateg {
+    gap: 3rem;
+  }
+  .deals {
+    width: 15vw;
+    height: max-content;
+  }
+
+  .deals h5 {
+    font-size: 1.5vw;
+  }
+  .deals h6,
+  .deals p {
+    font-size: 1vw;
+  }
+  .pShop {
+    font-size: 1.5vw !important;
+  }
+  .deals i {
+    font-size: 1.5vw;
+  }
+
+  .pcItem img {
+    height: 10vh !important;
+  }
+}
+@media only screen and (min-width: 1530px) {
+  .moboImg,
+  .peripImg {
+    padding-left: 2.5vw;
+  }
+
+  .productsDisplayCont {
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+  }
+
+  .prodDisplayItem {
+    max-width: 100%;
+  }
+  .pcItem,
+  .pcItem img {
+    height: 8vh;
+    width: 7vw;
+    transition: height 0.3s ease;
+  }
+  .pcItem {
+    margin: 0 1rem;
+  }
+  .pcComponentsCategMain {
+    margin-top: 2vh;
+  }
+  .productsDisplayContMain {
+    margin-top: 2vw;
+  }
+}
 @media only screen and (min-width: 1441px) {
-  /* .carouselCont {
+  .prodCategBig {
+    width: auto;
     height: auto;
-    width: 65%;
-    object-fit: cover;
   }
 
-  #carouselExampleAutoplaying img {
-    height: 30rem;
+  .prodCategBig > h2,
+  .prodCategBig > a {
+    font-size: 1vw;
+  }
+  #header .logoImg {
+    width: 100px;
+    height: 64px;
   }
 
-  .prodCategBig > * {
-    font-size: 2rem;
+  #header .logoName {
+    font-size: 2rem !important; /* Increase font size */
   }
 
-  .hovAnim {
-    font-size: 1.5rem;
+  #header form .form-control {
+    font-size: 1.5rem; /* Increase search bar font size */
+    padding: 0.75rem 1.5rem; /* Increase padding */
   }
 
-  #logoName {
-    font-weight: bold !important;
+  .insertNav .nav-link {
+    font-size: 1.5rem; /* Increase font size for navbar links */
+    padding: 0.75rem 1.5rem; /* Increase padding for navbar items */
   }
 
-  body > header > div > a > img {
-    height: 7rem;
-    width: 12rem;
+  .profIcon i,
+  .cartIcon i {
+    font-size: 1.8rem; /* Increase icon size for profile and cart */
   }
 
-  body > header > div > form > input {
-    height: 5rem;
-    margin-top: 1.5rem;
-  } */
+  .dropDownMargin .ulNav li {
+    margin-left: 1rem;
+  }
+
+  .deals > * {
+    font-size: 1vw;
+  }
+  .carouselCont {
+    margin-bottom: 2vh;
+  }
+  #carouselExampleAutoplaying > div {
+    height: 40vh;
+  }
+
+  .carouselCont img {
+    height: 40vh;
+    margin-bottom: 2vh;
+  }
+
+  .divider {
+    height: max-content;
+  }
+
+  .pcComponentsCateg {
+    height: 10vh;
+  }
 }
 @media only screen and (max-width: 1080px) {
   .productsDisplayCont {
@@ -430,15 +525,22 @@ h2 {
   .carouselCont {
     margin-left: 10px;
   }
-
+  .dealsItem1 {
+    margin-left: 0;
+  }
+  .deals {
+    margin: 0 2vw;
+    width: 95%;
+  }
   .deals h5 {
     font-size: 13px !important;
   }
-
-  .pcComponentsCategMain,
   .pcComponentsCateg {
-    margin-top: 0;
-    padding-top: 0;
+    margin: 0;
+  }
+  .pcComponentsCategMain {
+    margin: 0 4vw;
+    padding: 0;
   }
   .productsDisplayCont {
     width: 90%;
@@ -450,8 +552,41 @@ h2 {
   .pcItem img {
     height: 9vw;
   }
-}
+  .productsDisplayCont {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+  #ProductCategory {
+    font-size: 1.5vw;
+    font-optical-sizing: auto;
+  }
 
+  #productName {
+    font-size: 2vw;
+    font-optical-sizing: auto;
+  }
+  #price {
+    font-size: 2.5vw;
+    font-optical-sizing: auto;
+  }
+  .cartProd {
+    font-size: 3.5vw;
+    font-optical-sizing: auto;
+  }
+
+  .hddtxt,
+  .casetxt {
+    padding-left: 0.5rem;
+  }
+  .productsDisplayContMain {
+    margin-top: 3vh;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .categTitle {
+    font-size: 8px;
+  }
+}
 @media only screen and (max-width: 390px) {
   .deals h5 {
     font-size: 12px !important;
@@ -492,6 +627,6 @@ h2 {
     padding-left: 3px;
   }
   .productsDisplayCont {
-    width: 95%;
+    width: 80%;
   }
 }

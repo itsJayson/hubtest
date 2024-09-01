@@ -1,135 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hanap Usap Build</title>
-    <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Dosis:wght@200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,423;1,423&family=New+Amsterdam&family=Roboto:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <!--icons-->
-    <script
-      src="https://kit.fontawesome.com/f606e8e763.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--frameworks-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <!--navbar-->
-    <nav class="py-2 bg-body-tertiary border-bottom insertNav">
-      <div class="container dropDownMargin">
-        <div class="d-lg-none">
-          <div class="dropdown dropDownMain">
-            <button
-              class="btn w-auto dropDown dropButton"
-              type="button"
-              id="navbarDropdown"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i class="bi bi-list iconz"></i>
-            </button>
-            <ul
-              class="dropdown-menu w-50 navbarDrop"
-              aria-labelledby="navbarDropdown"
-            >
-              <li><a class="dropdown-item navbarItems" href="#">Home</a></li>
-              <li><a class="dropdown-item navbarItems" href="#">FAQs</a></li>
-              <li><a class="dropdown-item navbarItems" href="#">History</a></li>
-              <li>
-                <a class="dropdown-item navbarItems" href="#">Contact Us</a>
-              </li>
-              <li>
-                <a class="dropdown-item navbarItems" href="#">About Us</a>
-              </li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item navbarItems" href="#">Login</a></li>
-              <li><a class="dropdown-item navbarItems" href="#">Sign up</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="d-none d-lg-flex flex-wrap">
-          <ul class="nav me-auto">
-            <li class="nav-item">
-              <a
-                href="#"
-                class="nav-link link-body-emphasis px-2 hovAnim"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-body-emphasis px-2 hovAnim"
-                >FAQs</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-body-emphasis px-2 hovAnim"
-                >History</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-body-emphasis px-2 hovAnim"
-                >Contact Us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-body-emphasis px-2 hovAnim"
-                >About Us</a
-              >
-            </li>
-          </ul>
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="#" class="nav-link link-body-emphasis px-2 hovAnim"
-                >Login</a
-              >
-              <a
-                href="#"
-                class="nav-link link-body-emphasis px-2 hovAnim profIcon"
-                ><i class="bi bi-person"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link link-body-emphasis px-2 hovAnim"
-                >Sign up</a
-              >
-
-              <a
-                href="#"
-                class="nav-link link-body-emphasis px-2 hovAnim cartIcon"
-                ><i class="bi bi-cart3"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
+<!--navbar-->
+<nav class="py-2 bg-body-tertiary border-bottom insertNav">
+  <div class="container dropDownMargin">
+    <div class="d-lg-none">
+      <div class="dropdown dropDownMain">
+        <button
+          class="btn w-auto dropDown dropButton"
+          type="button"
+          id="navbarDropdown"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <i class="bi bi-list iconz"></i>
+        </button>
+        <ul
+          class="dropdown-menu w-50 navbarDrop"
+          aria-labelledby="navbarDropdown"
+        >
+          <li><a class="dropdown-item navbarItems" href="#">Home</a></li>
+          <li><a class="dropdown-item navbarItems" href="#">FAQs</a></li>
+          <li><a class="dropdown-item navbarItems" href="#">History</a></li>
+          <li>
+            <a class="dropdown-item navbarItems" href="#">Contact Us</a>
+          </li>
+          <li>
+            <a class="dropdown-item navbarItems" href="#">About Us</a>
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item navbarItems" href="#">Login</a></li>
+          <li><a class="dropdown-item navbarItems" href="#">Sign up</a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
 
-    <!--scripts-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./script.js"></script>
-  </body>
-</html>
+    <div class="d-none d-lg-flex flex-wrap">
+      <ul class="nav me-auto ulNav">
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link link-body-emphasis px-2 hovAnim"
+            aria-current="page"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link link-body-emphasis px-2 hovAnim">FAQs</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link link-body-emphasis px-2 hovAnim"
+            >History</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link link-body-emphasis px-2 hovAnim"
+            >Contact Us</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link link-body-emphasis px-2 hovAnim"
+            >About Us</a
+          >
+        </li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link link-body-emphasis px-2 hovAnim">Login</a>
+          <a href="#" class="nav-link link-body-emphasis px-2 hovAnim profIcon"
+            ><i class="bi bi-person"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link link-body-emphasis px-2 hovAnim"
+            >Sign up</a
+          >
+
+          <a href="#" class="nav-link link-body-emphasis px-2 hovAnim cartIcon"
+            ><i class="bi bi-cart3"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
