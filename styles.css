@@ -258,6 +258,28 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
+#logoHidden {
+  display: none;
+}
+
+/*footer*/
+.footerTitles {
+  font-family: "Montserrat", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.footerChild a:hover {
+  color: #7baaf0 !important;
+  transition: 0.3s;
+}
+/* 
+iframe {
+  width: max-content;
+  height: 100%;
+} */
+
+/*media queries*/
 @media only screen and (min-width: 2180px) {
   .pcComponentsCategMain {
     margin-top: 3vh;
@@ -324,6 +346,19 @@ h2 {
   }
   .productsDisplayContMain {
     margin-top: 2vw;
+  }
+  iframe {
+    width: 40rem !important;
+    height: 25rem !important;
+  }
+  .footerTitles {
+    font-size: 2vw;
+  }
+  .footerChild a,
+  .footerChild p,
+  .credits p,
+  .credits i {
+    font-size: 1.5vw;
   }
 }
 @media only screen and (min-width: 1441px) {
@@ -450,7 +485,19 @@ h2 {
     width: 70%;
   }
 }
-
+@media only screen and (min-width: 992px) {
+  iframe {
+    width: 30rem;
+    height: 20rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  iframe {
+    width: 100%;
+    margin: 0 3px;
+    height: 21rem;
+  }
+}
 @media only screen and (max-width: 730px) {
   .carouselCont {
     width: 95%;
