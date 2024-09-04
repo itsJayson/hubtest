@@ -43,3 +43,25 @@ $(document).ready(function () {
 $(".shopButton").on("click", function () {
   window.location.href = "index.html";
 });
+
+//contact.html
+function validate() {
+  const phoneInput = document.getElementById("phone").value.trim();
+
+  if (!phoneInput) {
+    alert("Phone number is required.");
+    return false;
+  }
+
+  // Check if captcha is completed
+  const captchaResponse = document.querySelector(
+    '.h-captcha [name="h-captcha-response"]'
+  ).value;
+
+  if (!captchaResponse) {
+    alert("Please complete the captcha.");
+    return false;
+  }
+
+  return true;
+}
