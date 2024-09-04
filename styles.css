@@ -273,12 +273,25 @@ h2 {
   color: #7baaf0 !important;
   transition: 0.3s;
 }
-/* 
-iframe {
-  width: max-content;
-  height: 100%;
-} */
-
+/*about*/
+.aboutTitle {
+  font-family: "Lato", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.5vw;
+  font-style: normal;
+  text-transform: none;
+  word-spacing: normal;
+}
+.aboutMain {
+  font-size: 2vw;
+}
+.subCaption {
+  font-size: auto !important;
+}
+video {
+  background-color: #000;
+}
 /*media queries*/
 @media only screen and (min-width: 2180px) {
   .pcComponentsCategMain {
@@ -462,6 +475,12 @@ iframe {
 
   .dealsItem1 {
     margin-left: 8px;
+  }
+  .aboutTitle {
+    font-size: 2vh;
+  }
+  .aboutMain {
+    font-size: 3vh;
   }
 }
 

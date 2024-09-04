@@ -38,3 +38,8 @@ $(document).ready(function () {
     $(this).parents(".card-header").toggleClass("highlight");
   });
 });
+
+//about.html
+$(".shopButton").on("click", function () {
+  window.location.href = "index.html";
+});
