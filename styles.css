@@ -372,6 +372,7 @@ video {
 .h-captcha {
   margin-top: 1rem;
 }
+
 /*media queries*/
 @media only screen and (min-width: 2180px) {
   .pcComponentsCategMain {
@@ -440,7 +441,7 @@ video {
   .productsDisplayContMain {
     margin-top: 2vw;
   }
-  iframe {
+  .iframeMap {
     width: 40rem !important;
     height: 25rem !important;
   }
@@ -585,13 +586,13 @@ video {
   }
 }
 @media only screen and (min-width: 992px) {
-  iframe {
+  .iframeMap {
     width: 30rem;
     height: 20rem;
   }
 }
 @media only screen and (max-width: 991px) {
-  iframe {
+  .iframeMap {
     width: 100%;
     margin: 0 3px;
     height: 21rem;
