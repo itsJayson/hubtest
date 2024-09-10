@@ -1,0 +1,20 @@
+html > * {
+  scroll-behavior: smooth;
+}
+.adminMainCont {
+  height: 100vh;
+}
+
+@media only screen and (min-width: 991px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #sidebar {
+    display: none !important;
+  }
+  #offcanvasExample {
+  }
+}
